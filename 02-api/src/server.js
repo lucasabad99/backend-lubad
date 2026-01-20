@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 
-app.get('/users/:id', async(req, res) => {
+app.get('/carrito/:id', async(req, res) => {
 try {
     const { id } = req.params;
     const users = await Manager.getUsers();
