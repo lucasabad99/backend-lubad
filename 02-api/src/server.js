@@ -19,7 +19,7 @@ try {
 app.get("/api/products/:pid", async (req, res) => {
   try {
     const { pid } = req.params;
-    const product = await ProductManager.getById(pid);
+    const product = await Manager.getById(pid);
     res.json(product);
   } catch (error) {
     res.status(404).json({ error: error.message });
@@ -28,7 +28,7 @@ app.get("/api/products/:pid", async (req, res) => {
 
 app.post("/api/products", async (req, res) => {
   try {
-    const created = await ProductManager.add(req.body);
+    const created = await Manager.add(req.body);
     res.status(201).json(created);
   } catch (error) {
     res.status(400).json({ error: error.message });

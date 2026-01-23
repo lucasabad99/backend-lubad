@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "title": "Teclado Mecánico",
+    "description": "Red switches",
+    "code": "KB123",
+    "price": 25000,
+    "status": true,
+    "stock": 50,
+    "category": "perifericos",
+    "thumbnails": [
+      "img1.png",
+      "img2.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mouse Gamer RGB",
+    "description": "Mouse ergonómico con luces RGB y 7200 DPI",
+    "code": "MOU-001",
+    "price": 15000,
+    "status": true,
+    "stock": 120,
+    "category": "perifericos",
+    "thumbnails": [
+      "mouse1.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Auriculares Inalámbricos",
+    "description": "Bluetooth 5.0 con cancelación de ruido",
+    "code": "AUD-250",
+    "price": 42000,
+    "status": true,
+    "stock": 60,
+    "category": "audio",
+    "thumbnails": [
+      "auris.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Webcam Full HD 1080p",
+    "description": "Ideal para videollamadas y streaming, incluye micrófono integrado",
+    "code": "WEB-1080",
+    "price": 32000,
+    "status": true,
+    "stock": 80,
+    "category": "accesorios",
+    "thumbnails": [
+      "webcam.png"
+    ]
+  }
+]
