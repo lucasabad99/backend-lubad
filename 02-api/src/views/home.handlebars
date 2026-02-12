@@ -1,0 +1,9 @@
+{{! Home view: static list rendered server-side }}
+<h1>Home - Products</h1>
+<ul>
+  {{#each products}}
+    <li>
+      <strong>{{this.title}}</strong> - {{this.description}} - ${{this.price}} (id: {{this.id}})
+    </li>
+  {{/each}}
+</ul>

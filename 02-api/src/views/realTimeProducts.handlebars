@@ -1,0 +1,22 @@
+{{! realTimeProducts view: uses websockets for create/delete and live updates }}
+<h1>Real Time Products</h1>
+
+<section>
+  <h2>Create product (via websocket)</h2>
+  <form id="productForm">
+    <input name="title" placeholder="title" required />
+    <input name="description" placeholder="description" />
+    <input name="price" placeholder="price" type="number" step="0.01" />
+    <input name="stock" placeholder="stock" type="number" />
+    <input name="code" placeholder="code" />
+    <input name="category" placeholder="category" />
+    <button type="submit">Create</button>
+  </form>
+</section>
+
+<section>
+  <h2>Products (live)</h2>
+  <ul id="productsList"></ul>
+</section>
+
+<script src="/js/realtime.js"></script>
