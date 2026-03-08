@@ -1,0 +1,24 @@
+<!-- Vista para mostrar productos de un carrito específico -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+  <h1>Carrito {{cart._id}}</h1>
+  <div id="carrito">
+    {{#each cart.products}}
+      <div class="producto">
+        <h2>{{this.product.title}}</h2>
+        <p>{{this.product.description}}</p>
+        <p>Precio: ${{this.product.price}}</p>
+        <p>Categoría: {{this.product.category}}</p>
+        <p>Cantidad: {{this.quantity}}</p>
+        <button onclick="eliminarDelCarrito('{{this.product._id}}')">Eliminar</button>
+      </div>
+    {{/each}}
+  </div>
+</body>
+</html>
