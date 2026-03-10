@@ -1,4 +1,3 @@
-// Repositorio de carritos
 const Cart = require('../models/Cart');
 
 const getCartById = async (cid) => {

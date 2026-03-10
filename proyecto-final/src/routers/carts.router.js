@@ -1,10 +1,8 @@
-// Router profesional para carritos
 const express = require('express');
 const { getCartById } = require('../controllers/cart-controller');
 const Cart = require('../models/Cart');
 const router = express.Router();
 
-// DELETE api/carts/:cid/products/:pid
 router.delete('/:cid/products/:pid', async (req, res) => {
   try {
     const { cid, pid } = req.params;
@@ -18,7 +16,6 @@ router.delete('/:cid/products/:pid', async (req, res) => {
   }
 });
 
-// PUT api/carts/:cid
 router.put('/:cid', async (req, res) => {
   try {
     const { cid } = req.params;
@@ -33,7 +30,6 @@ router.put('/:cid', async (req, res) => {
   }
 });
 
-// PUT api/carts/:cid/products/:pid
 router.put('/:cid/products/:pid', async (req, res) => {
   try {
     const { cid, pid } = req.params;
@@ -50,7 +46,6 @@ router.put('/:cid/products/:pid', async (req, res) => {
   }
 });
 
-// DELETE api/carts/:cid
 router.delete('/:cid', async (req, res) => {
   try {
     const { cid } = req.params;
@@ -64,7 +59,6 @@ router.delete('/:cid', async (req, res) => {
   }
 });
 
-// GET api/carts/:cid (con populate)
 router.get('/:cid', getCartById);
 
 module.exports = router;
